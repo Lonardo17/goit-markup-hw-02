@@ -144,6 +144,10 @@ footer {
   line-height: 1.71;
   color: var(--footer-text-color);
 }
+.address:hover,
+.address:focus {
+  color: var(--blue-color);
+}
 .actual {
   color: var(--second-text-color);
 }
