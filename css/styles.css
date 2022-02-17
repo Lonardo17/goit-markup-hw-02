@@ -16,6 +16,11 @@ h3,
 h4 {
   color: var(--header-text-color);
 }
+button {
+  font-style: normal;
+  font-family: Roboto;
+  letter-spacing: 0.03em;
+}
 body {
   font-style: normal;
   font-family: Roboto;
@@ -48,7 +53,8 @@ header {
   background: var(--background-color);
 }
 /* navigation */
-.choise {
+.choise,
+.active {
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -56,10 +62,17 @@ header {
   letter-spacing: 0.02em;
   color: var(--header-text-color);
 }
+.active {
+  color: var(--blue-color);
+}
 .choise:hover,
 .choise:focus {
   color: var(--blue-color);
 }
+/* .active:hover,
+.active:focus {
+  color: var(--header-text-color);
+} */
 /* contacts */
 .contacts {
   text-decoration: none;
@@ -105,6 +118,7 @@ header {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-transform: uppercase;
 }
 .advantage-text {
   font-size: 14px;
@@ -121,13 +135,13 @@ header {
 }
 
 /* forth section */
-.team > h3 {
+.team h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
-.team > p {
+.team p {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -157,7 +171,7 @@ footer {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
-  color: var(--primary-text-color);
+  color: var(--header-text-color);
   background: var(--bacground-team);
 }
 .filter .button:hover,
@@ -165,15 +179,17 @@ footer {
   color: var(--second-text-color);
   background: var(--blue-color);
 }
-.list > h2 {
+.list a {
+  text-decoration: none;
+}
+
+.list h2 {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
 }
-.list > p {
+.list p {
   font-size: 16px;
   line-height: 1.88;
-}
-.list > li {
-  cursor: pointer;
+  color: var(--primary-text-color);
 }
